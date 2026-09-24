@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="OneShop — satu tempat untuk belanja dan berjualan. Ribuan toko terverifikasi, satu marketplace." />
+    <title>OneShop — Satu Tempat, Semua Toko</title>
+
+    <!-- PENTING setelah deploy: ganti "https://oneshop-kamu.vercel.app" di bawah ini dengan
+         domain sungguhan (URL Vercel atau custom domain), dan tambahkan file gambar nyata di
+         /public/og-image.jpg (1200x630px) — tanpa itu, preview link di WhatsApp/Twitter/dll
+         akan kosong atau menunjuk ke domain yang salah. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="OneShop" />
+    <meta property="og:title" content="OneShop — Satu Tempat, Semua Toko" />
+    <meta property="og:description" content="Satu tempat untuk belanja dan berjualan. Ribuan toko terverifikasi, satu marketplace." />
+    <meta property="og:url" content="https://oneshop-kamu.vercel.app" />
+    <meta property="og:image" content="https://oneshop-kamu.vercel.app/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="OneShop — Satu Tempat, Semua Toko" />
+    <meta name="twitter:description" content="Satu tempat untuk belanja dan berjualan. Ribuan toko terverifikasi, satu marketplace." />
+    <meta name="twitter:image" content="https://oneshop-kamu.vercel.app/og-image.jpg" />
+
+    <meta name="theme-color" content="#14161A" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Prevent flash of wrong theme before React mounts
+      (function () {
+        try {
+          var stored = localStorage.getItem('oneshop-theme')
+          var system = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+          var theme = stored === 'light' || stored === 'dark' ? stored : system
+          if (theme === 'dark') document.documentElement.classList.add('dark')
+        } catch (e) {}
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

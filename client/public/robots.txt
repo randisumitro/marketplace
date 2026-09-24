@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Ganti dengan domain sungguhan setelah deploy
+Sitemap: https://oneshop-kamu.vercel.app/sitemap.xml
