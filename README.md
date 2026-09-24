@@ -1,6 +1,6 @@
-# OneShop Marketplace
+# E-Commerce Marketplace
 
-OneShop adalah platform *e-commerce* (marketplace) modern dengan antarmuka yang dinamis dan fitur yang komprehensif, mendukung peran ganda sebagai pembeli dan penjual. Proyek ini dibangun dari awal menggunakan arsitektur modern untuk memastikan performa yang cepat, aman, dan dapat diskalakan.
+Platform *e-commerce* (marketplace) modern dengan antarmuka yang dinamis dan fitur yang komprehensif, mendukung peran ganda sebagai pembeli dan penjual. Proyek ini dibangun dari awal menggunakan arsitektur modern untuk memastikan performa yang cepat, aman, dan dapat diskalakan.
 
 ## 🚀 Teknologi Utama
 
@@ -33,7 +33,7 @@ Proyek ini dipisahkan menjadi dua bagian utama (Frontend dan Backend):
 ## 📁 Struktur Proyek
 
 ```text
-oneshop-v2/
+marketplace-project/
 ├── client/     # Kode sumber Frontend (React + Vite) -> Siap di-deploy ke Vercel/Netlify
 └── server/     # Kode sumber Backend (Express API)   -> Siap di-deploy ke Railway/Render
 ```
